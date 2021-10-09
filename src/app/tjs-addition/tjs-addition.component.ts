@@ -12,4 +12,10 @@ export class TjsAdditionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  numberOne = 10;
+  numberTwo = 90;
+  total = 100;
+
+  add = () => this.total = this.numberOne + this.numberTwo;
+
 }
