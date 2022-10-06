@@ -10,3 +10,12 @@
     {{ pt.name }} ({{ pt.price | currency }})
     </label>
 </div>
+<br>
+<button
+    (click)="calculateTotal()"
+>
+    Calcuate Total
+</button>
+<h3>
+    Total: {{ totalPrice | currency }}
+</h3>
