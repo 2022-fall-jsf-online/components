@@ -32,7 +32,7 @@ export class PizzaToppingsComponent implements OnInit {
         , checked: false
       })
     );
-    console.log(this,this.availablePizzaToppings);
+    console.log(this.availablePizzaToppings);
   }
 
 }
