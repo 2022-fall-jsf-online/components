@@ -7,14 +7,8 @@
   <title>Document</title>
 </head>
 <body>
-  <h2>
-      Available Toppings
-  </h2>
-  <div 
-    *ngFor="let pt of availablePizzaToppings"
-    >
-    {{ pt.name }} ({{ pt.price | currency}})
-  </div>
+  <h1>Components App</h1>
+  <app-pizza-toppings></app-pizza-toppings>
 
 </body>
 </html>
