@@ -12,4 +12,12 @@ export class BsanAdditionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  numberOne = 500;
+  numberTwo = 50;
+  numberThree = 200;
+  
+  total  = 2000;
+
+  doMath = () => this.total = this.numberOne / this.numberTwo * this.numberThree;
+
 }
