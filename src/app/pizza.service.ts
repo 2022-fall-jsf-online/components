@@ -12,15 +12,15 @@ export class PizzaService {
     const toppingsViaService = [
       {
         name: 'Pineapple'
-         , price: 1.50
+        , price: 1.50
       }
       , {
         name: 'Bacon'
-         , price: 2
+        , price: 2
       }
       , {
         name: 'Pepperoni'
-         , price: 2
+        , price: 2
       }
     ];
 
