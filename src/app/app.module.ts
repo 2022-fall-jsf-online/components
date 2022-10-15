@@ -12,6 +12,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { AramseyCalculatorComponent } from './aramsey-calculator/aramsey-calculator.component';
 
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +31,8 @@ import { AramseyCalculatorComponent } from './aramsey-calculator/aramsey-calcula
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
+    , MatInputModule
+    , MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
