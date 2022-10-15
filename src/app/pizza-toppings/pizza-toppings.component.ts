@@ -22,7 +22,7 @@ export class PizzaToppingsComponent implements OnInit {
   availablePizzaToppings: PizzaToppingsDisplay[] = [];
   ngOnInit(): void {
 
-    const pt = this.pizzaSvc.getPizzToppingsFromTheCloud();
+    const pt = this.pizzaSvc.getPizzaToppingsFromTheCloud();
     console.log(pt);
 
     this.availablePizzaToppings = pt.map(
@@ -35,4 +35,15 @@ export class PizzaToppingsComponent implements OnInit {
     console.log(this.availablePizzaToppings);
   }
 
+  totalPrice = 0;
+
+  calculateTotal = () => {
+    this.totalPrice = this.availablePizzaToppings
+      .filter(x => x.checked)
+      .reduce(
+        (acc, x) => acc + x.price
+        , 0
+      )
+    ;
+  }
 }
