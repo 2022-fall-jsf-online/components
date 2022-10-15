@@ -7,7 +7,7 @@ export class PizzaService {
 
   constructor() { }
 
-  getPizzToppingsFromTheCloud() {
+  getPizzaToppingsFromTheCloud() {
     //pretend we make a web service call here
     const toppingsFromWebService = [
       {
