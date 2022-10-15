@@ -12,4 +12,27 @@ export class AramseyCalculatorComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  numberOne = 25;
+  numberTwo = 5;
+  total = 30;
+  operator = "+";
+
+  add = () => {
+    this.operator = "+";
+    this.total = this.numberOne + this.numberTwo;
+  }
+  subtract = () => {
+    this.operator = "-";
+    this.total = this.numberOne - this.numberTwo;
+  }
+  multiply = () => {
+    this.operator = "*";
+    this.total = this.numberOne * this.numberTwo;
+  }
+  divide = () => {
+    this.operator = "/";
+    this.total = this.numberOne / this.numberTwo;
+  }
+
+
 }
