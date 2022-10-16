@@ -12,4 +12,9 @@ export class DmeyMultiplyComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  numberOne = 1;
+  numberTwo = 2;
+  total = 2;
+
+  multiply = () => this.total = this.numberOne * this.numberTwo;
 }
