@@ -11,6 +11,10 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { DmeyMultiplyComponent } from './dmey-multiply/dmey-multiply.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
+
 
 @NgModule({
   declarations: [
@@ -25,6 +29,8 @@ import { DmeyMultiplyComponent } from './dmey-multiply/dmey-multiply.component';
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
+    , MatInputModule
+    , MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
