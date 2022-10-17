@@ -14,12 +14,13 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { AriceAdditionComponent } from './arice-addition/arice-addition.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent
-    , TjsMultiplicationComponent
+    , TjsMultiplicationComponent, AriceAdditionComponent
   ],
   imports: [
     BrowserModule
