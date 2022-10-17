@@ -25,13 +25,41 @@
             />
         </mat-form-field>
         &nbsp;
+         = 
+        {{ total }}
+        <br>
+        <!------------------------------------->
         <button
-            mat-mini-fab
+            mat-raised-button color="primary"
             (click)="add()"
         >
-            =
+            Add
         </button>
         &nbsp;
-        {{ total }}
+        <!------------------------------------->
+        <button
+            mat-raised-button color="accent"
+            (click)="subtract()"
+        >
+            Subtract
+        </button>
+        &nbsp;
+        <!------------------------------------->
+        <button
+            mat-raised-button color="primary"
+            (click)="multiply()"
+        >
+            Multiply
+        </button>
+        &nbsp;
+        <!------------------------------------->
+        <button
+          mat-raised-button color="accent"
+            (click)="divide()"
+        >
+            Divide
+        </button>
+        &nbsp;
+        <!------------------------------------->        
     </mat-card-content>
 </mat-card>

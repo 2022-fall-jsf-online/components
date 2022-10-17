@@ -17,5 +17,7 @@ export class AriceAdditionComponent implements OnInit {
   total = 100;
 
   add = () => this.total = this.numberOne + this.numberTwo;
-
+  subtract = () => this.total = this.numberOne - this.numberTwo;
+  multiply = () => this.total = this.numberOne * this.numberTwo;
+  divide = () => this.total = this.numberOne / this.numberTwo;
 }
