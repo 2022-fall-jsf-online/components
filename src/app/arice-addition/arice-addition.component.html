@@ -13,7 +13,21 @@
                 [(ngModel)]="numberOne"
             />
         </mat-form-field>
-        &nbsp; + &nbsp;
+        &nbsp;
+        <mat-form-field>
+            <mat-label>
+                Select an operation
+            </mat-label>
+            <mat-select 
+                [(value)]="selectedOperation"
+            >
+                <mat-option value="add">+</mat-option>
+                <mat-option value="subtract">-</mat-option>
+                <mat-option value="multiply">*</mat-option>
+                <mat-option value="divide">/</mat-option>
+            </mat-select>
+        </mat-form-field>
+        &nbsp;
         <mat-form-field>
             <mat-label>
                 Number 2
@@ -25,7 +39,13 @@
             />
         </mat-form-field>
         &nbsp;
-         = 
+        <button
+            mat-mini-fab
+            (click)="calculateAnswer()"
+        >
+            =
+        </button>
+        &nbsp; 
         {{ total }}
         <br>
         <!------------------------------------->

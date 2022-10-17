@@ -20,4 +20,12 @@ export class AriceAdditionComponent implements OnInit {
   subtract = () => this.total = this.numberOne - this.numberTwo;
   multiply = () => this.total = this.numberOne * this.numberTwo;
   divide = () => this.total = this.numberOne / this.numberTwo;
+
+  selectedOperation = "add" // Default to addition.
+
+  calculateAnswer = () => {
+    console.log("selectedOperation", this.selectedOperation);
+
+    // Now do the proper maths based on the selected operation ! ! !
+  };
 }
