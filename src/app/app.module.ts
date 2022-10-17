@@ -12,6 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
 
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { AriceAdditionComponent } from './arice-addition/arice-addition.component';
@@ -31,6 +32,7 @@ import { AriceAdditionComponent } from './arice-addition/arice-addition.componen
     , MatCheckboxModule
     , MatFormFieldModule
     , MatInputModule
+    , MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
