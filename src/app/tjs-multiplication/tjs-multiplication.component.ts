@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-tjs-multiplication',
-  templateUrl: './tjs-multiplication.component.html',
-  styleUrls: ['./tjs-multiplication.component.css']
+  selector: 'app-alm-multiplication',
+  templateUrl: './alm-multiplication.component.html',
+  styleUrls: ['./alm-multiplication.component.css']
 })
-export class TjsMultiplicationComponent implements OnInit {
+export class AlmMultiplicationComponent implements OnInit {
 
   constructor() { }
 
