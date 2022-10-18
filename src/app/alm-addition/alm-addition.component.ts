@@ -18,5 +18,11 @@ numberOne = 10;
   total = 900;
 
   multiply = () => this.total = this.numberOne * this.numberTwo;
-  
+
+  divide = () => this.total = this.numberOne / this.numberTwo;
+
+  add = () => this.total = this.numberOne + this.numberTwo;
+
+  subtract = () => this.total = this.numberOne - this.numberTwo;
+
 }
