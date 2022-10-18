@@ -11,6 +11,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -33,6 +34,7 @@ import { AlmAdditionComponent } from './alm-addition/alm-addition.component';
     , MatFormFieldModule
     , MatInputModule
     , MatRadioModule
+    , MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

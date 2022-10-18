@@ -5,11 +5,16 @@
     </mat-card-title>
     <mat-card-content>
         <mat-radio-group aria-label="Select an option">
-            <mat-radio-button value="1">Deep Dish</mat-radio-button>
+            <mat-radio-button value="1">Deep Dish ($12.99)</mat-radio-button>
             <br>
-            <mat-radio-button value="2">Thin Crust</mat-radio-button>
+            <mat-radio-button value="2">Thin Crust ($10.99)</mat-radio-button>
             <br>
-            <mat-radio-button value="3">Gluten Free</mat-radio-button>
+            <mat-radio-button value="3"
+                matTooltip="Made in a share workspace where cross contamination could occurr"
+                aria-label="Radio button that displays that explains the pizza is made in a share workspace where cross contamination could occurr"
+        >Gluten Free ($15.99)</mat-radio-button>
           </mat-radio-group>
+          <br>
+          
     </mat-card-content>
 </mat-card>
