@@ -12,4 +12,11 @@ export class AlmAdditionComponent implements OnInit {
 
   ngOnInit(): void {
 }
+
+numberOne = 10;
+  numberTwo = 90;
+  total = 900;
+
+  multiply = () => this.total = this.numberOne * this.numberTwo;
+  
 }
