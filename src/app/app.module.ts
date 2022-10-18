@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatRadioModule } from '@angular/material/radio';
 
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -31,6 +32,7 @@ import { AlmAdditionComponent } from './alm-addition/alm-addition.component';
     , MatCheckboxModule
     , MatFormFieldModule
     , MatInputModule
+    , MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
