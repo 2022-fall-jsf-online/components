@@ -16,8 +16,6 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
