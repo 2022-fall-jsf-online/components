@@ -10,19 +10,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatRadioModule } from '@angular/material/radio';
-import { MatTooltipModule } from '@angular/material/tooltip';
+import { RaCalculatorComponent } from './ra-calculator/ra-calculator.component';
+
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
 import { AlmAdditionalComponent } from './alm-additional/alm-additional.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaToppingsComponent
-    , TjsMultiplicationComponent, AlmAdditionalComponent
+    PizzaToppingsComponent,
+    RaCalculatorComponent,
+    TjsMultiplicationComponent,
+    AlmAdditionalComponent
   ],
   imports: [
     BrowserModule
@@ -33,8 +35,6 @@ import { AlmAdditionalComponent } from './alm-additional/alm-additional.componen
     , MatCheckboxModule
     , MatFormFieldModule
     , MatInputModule
-    , MatRadioModule
-    , MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
