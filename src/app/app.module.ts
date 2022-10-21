@@ -16,13 +16,15 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { DhCouponComponent } from './dh-coupon/dh-coupon.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
     RaCalculatorComponent,
-    TjsMultiplicationComponent
+    TjsMultiplicationComponent,
+    DhCouponComponent
   ],
   imports: [
     BrowserModule
