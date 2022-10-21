@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AlmAdditionComponent } from './alm-addition.component';
+import { AlmAdditionalComponent } from './alm-additional.component';
 
 describe('AlmAdditionComponent', () => {
-  let component: AlmAdditionComponent;
-  let fixture: ComponentFixture<AlmAdditionComponent>;
+  let component: AlmAdditionalComponent;
+  let fixture: ComponentFixture<AlmAdditionalComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AlmAdditionComponent ]
+      declarations: [ AlmAdditionalComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AlmAdditionComponent);
+    fixture = TestBed.createComponent(AlmAdditionalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

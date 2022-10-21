@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-alm-addition',
-  templateUrl: './alm-addition.component.html',
-  styleUrls: ['./alm-addition.component.css']
+  selector: 'app-alm-additional',
+  templateUrl: './alm-additional.component.html',
+  styleUrls: ['./alm-additional.component.css']
 })
-export class AlmAdditionComponent implements OnInit {
+export class AlmAdditionalComponent implements OnInit {
 
   constructor( ) { }
 

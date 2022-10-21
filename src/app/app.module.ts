@@ -16,13 +16,13 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { AlmAdditionComponent } from './alm-addition/alm-addition.component';
+import { AlmAdditionalComponent } from './alm-additional/alm-additional.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent
-    , TjsMultiplicationComponent, AlmAdditionComponent
+    , TjsMultiplicationComponent, AlmAdditionalComponent
   ],
   imports: [
     BrowserModule
