@@ -16,13 +16,15 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { BsanMathComponent } from './bsan-math/bsan-math.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
     RaCalculatorComponent,
-    TjsMultiplicationComponent
+    TjsMultiplicationComponent,
+    BsanMathComponent
   ],
   imports: [
     BrowserModule
