@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PizzaService } from '../pizza.service';
+import { PizzaToppingsComponent } from '../pizza-toppings/pizza-toppings.component';
 
 @Component({
   selector: 'app-dh-coupon',
@@ -7,7 +7,6 @@ import { PizzaService } from '../pizza.service';
   styleUrls: ['./dh-coupon.component.css']
 })
 export class DhCouponComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit(): void {

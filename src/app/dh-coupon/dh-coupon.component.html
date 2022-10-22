@@ -19,14 +19,21 @@
       <br>
       <form class="coupon-form">
           <mat-form-field class="example-full-width" appearance="fill">
-              <mat-label>Coupon Code</mat-label><br>
-              <input matInput name="input" placeholder="enter your code" value="">
+              <mat-label>Enter your order total</mat-label><br>
+              <input matInput name="input" placeholder="enter your total" value="">
           </mat-form-field>
+          <br>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Enter your coupon code</mat-label><br>
+            <input matInput name="input" placeholder="enter your code" value="">
+        </mat-form-field>
+          <br>
+          <button mat-raised-button color="primary">Calculate total</button>
       </form>
-
+      <br>
       <h3>
-        <!-- Total: {{ totalPrice | currency }} -->
-    </h3>   
+        Total with Discount: 
+      </h3>   
     </mat-card-content>
 </mat-card>
 <br>
