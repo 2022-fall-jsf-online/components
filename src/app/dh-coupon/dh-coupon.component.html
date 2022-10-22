@@ -1,1 +1,32 @@
-<p>dh-coupon works!</p>
+<br>
+<mat-card>
+    <mat-card-title>
+        Drew's Coupon Component
+    </mat-card-title>
+    <mat-card-content>
+      <mat-expansion-panel >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Click Here to View Current Coupon Codes
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-list role="list">
+          <mat-list-item role="listitem">25OFF - 25 cents off of your order</mat-list-item>
+          <mat-list-item role="listitem">50OFF - 50 cents off of your order</mat-list-item>
+          <mat-list-item role="listitem">75OFF - 75 cents off of your order</mat-list-item>
+        </mat-list>  
+      </mat-expansion-panel>
+      <br>
+      <form class="coupon-form">
+          <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Coupon Code</mat-label><br>
+              <input matInput name="input" placeholder="enter your code" value="">
+          </mat-form-field>
+      </form>
+
+      <h3>
+        <!-- Total: {{ totalPrice | currency }} -->
+    </h3>   
+    </mat-card-content>
+</mat-card>
+<br>
