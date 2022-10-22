@@ -11,5 +11,11 @@ export class BsanMathComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  numberTotal = 0;
+  numberTip = 0;
+  total = 0;
 
+  //totalTip = () => this.tip = this.numberTotal / this.numberTip;
+
+  totalWithTip = () => this.total = this.numberTotal * this.numberTip + this.numberTotal; 
 }
