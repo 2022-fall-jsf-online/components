@@ -18,6 +18,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { AlmAdditionalComponent } from './alm-additional/alm-additional.component';
 import { BsanMathComponent } from './bsan-math/bsan-math.component';
+import { SnahnDivisionComponent } from './snahn-division/snahn-division.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BsanMathComponent } from './bsan-math/bsan-math.component';
     RaCalculatorComponent,
     TjsMultiplicationComponent,
     AlmAdditionalComponent,
-    BsanMathComponent
+    BsanMathComponent,
+    SnahnDivisionComponent
   ],
   imports: [
     BrowserModule
