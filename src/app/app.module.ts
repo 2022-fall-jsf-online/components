@@ -16,6 +16,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { AlmAdditionalComponent } from './alm-additional/alm-additional.component';
 import { BsanMathComponent } from './bsan-math/bsan-math.component';
 
 @NgModule({
@@ -24,6 +25,7 @@ import { BsanMathComponent } from './bsan-math/bsan-math.component';
     PizzaToppingsComponent,
     RaCalculatorComponent,
     TjsMultiplicationComponent,
+    AlmAdditionalComponent,
     BsanMathComponent
   ],
   imports: [
