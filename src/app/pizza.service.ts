@@ -26,4 +26,6 @@ export class PizzaService {
 
     return toppingsFromWebService;
   }
+
+  toppingsTotal = 0;
 }

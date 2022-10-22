@@ -25,6 +25,7 @@
             <label>
                 <mat-checkbox 
                     [(ngModel)]="pt.checked"
+                    (change)="calculateTotalPrice()"
                 >
                 </mat-checkbox>
                 {{ pt.name }} ({{ pt.price | currency }})
