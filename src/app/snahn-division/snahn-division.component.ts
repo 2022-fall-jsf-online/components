@@ -12,4 +12,10 @@ export class SnahnDivisionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  numberOne = 10;
+  numberTwo = 11;
+  total = 21;
+
+  divide = () => this.total = this.numberOne / this.numberTwo;
+
 }
