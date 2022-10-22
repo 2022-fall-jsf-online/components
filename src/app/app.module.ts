@@ -17,6 +17,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { AlmAdditionalComponent } from './alm-additional/alm-additional.component';
+import { BsanMathComponent } from './bsan-math/bsan-math.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AlmAdditionalComponent } from './alm-additional/alm-additional.componen
     PizzaToppingsComponent,
     RaCalculatorComponent,
     TjsMultiplicationComponent,
-    AlmAdditionalComponent
+    AlmAdditionalComponent,
+    BsanMathComponent
   ],
   imports: [
     BrowserModule
