@@ -14,6 +14,7 @@ import { RaCalculatorComponent } from './ra-calculator/ra-calculator.component';
 
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDividerModule } from '@angular/material/divider';
 
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { AlmAdditionalComponent } from './alm-additional/alm-additional.component';
@@ -39,6 +40,7 @@ import { AlperenAdditionComponent } from './alperen-addition/alperen-addition.co
     , MatCheckboxModule
     , MatFormFieldModule
     , MatInputModule
+    , MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
