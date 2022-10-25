@@ -1,37 +1,37 @@
 <mat-card>
     <mat-card-title>
-        Tom's Multiplication Component
+        Brittany Tip Calculator 
     </mat-card-title>
     <mat-card-content>
         <mat-form-field>
             <mat-label>
-                Number 1
+                    Bill Total
             </mat-label>
-            <input
+            <input  
                 matInput 
                 type="number"
-                [(ngModel)]="numberOne" 
+                [(ngModel)]="numberTotal"
             />
         </mat-form-field>
-        &nbsp; x &nbsp;
+        &nbsp;
         <mat-form-field>
             <mat-label>
-                Number 2
+                Tip (Enter Tip in Decimal .10, Ect)
             </mat-label>
-            <input
+            <input  
                 matInput 
-                type="number" 
-                [(ngModel)]="numberTwo" 
+                type="number"
+                [(ngModel)]="numberTip"
             />
         </mat-form-field>
         &nbsp;
-        <button
-            mat-mini-fab
-            (click)="multiply()"
-        >
-            =
-        </button>
-        &nbsp;
+        <button 
+        mat-raised-button
+        color="warn"
+        (click)="totalWithTip()"
+    >
+        Calulate Total
+    </button>
         {{ total }}
     </mat-card-content>
 </mat-card>

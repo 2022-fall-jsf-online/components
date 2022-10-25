@@ -12,15 +12,22 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { RaCalculatorComponent } from './ra-calculator/ra-calculator.component';
 
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { AlmAdditionalComponent } from './alm-additional/alm-additional.component';
+import { BsanMathComponent } from './bsan-math/bsan-math.component';
 import { AriceAdditionComponent } from './arice-addition/arice-addition.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaToppingsComponent
-    , TjsMultiplicationComponent, AriceAdditionComponent
+    PizzaToppingsComponent,
+    RaCalculatorComponent,
+    TjsMultiplicationComponent,
+    AlmAdditionalComponent,
+    BsanMathComponent,
+    AriceAdditionComponent
   ],
   imports: [
     BrowserModule
