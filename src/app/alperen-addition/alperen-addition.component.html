@@ -9,16 +9,26 @@
             </mat-label>
             <input type="number"
             matInput
+            [(ngModel)]="firstNumber"
             >
         </mat-form-field>
-        &nbsp;
+        &nbsp; + &nbsp;
         <mat-form-field>
             <mat-label>
                 Second Number
             </mat-label>
             <input type="number"
             matInput
+            [(ngModel)]="secondNumber"
             >
         </mat-form-field>
+        &nbsp;
+        <button
+            mat-mini-fab
+            (click)="add();"
+        >
+        =
+        </button>
+        {{ total }}
     </mat-card-content>
 </mat-card>

@@ -12,4 +12,10 @@ export class AlperenAdditionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  firstNumber = 10;
+  secondNumber = 90;
+  total = 100;
+
+  add = () => this.total = this.firstNumber + this.secondNumber;
+
 }
