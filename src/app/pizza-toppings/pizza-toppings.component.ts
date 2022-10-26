@@ -36,15 +36,14 @@ export class PizzaToppingsComponent implements OnInit {
     console.log(this.availablePizzaToppings);
   }
 
-  totalPrice = 0;
-
-  calculateTotal = () => {
-    this.totalPrice = this.availablePizzaToppings
+  // This is a getter that works whenever variable is called
+  // It is a function because it is now a getter and needs to return something
+  get totalPrice() {
+    return this.availablePizzaToppings
       .filter(x => x.checked)
       .reduce(
         (acc, x) => acc + x.price
         , 0
-      )
-    ;
+      );
   }
 }
