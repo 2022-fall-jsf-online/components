@@ -1,1 +1,8 @@
-<p>pizza-toppings works!</p>
+<h2>
+    Available Toppings
+</h2>
+<div
+    *ngFor="let pt of availablePizzaToppings"
+>
+    {{ pt.name }} ({{ pt.price }})
+</div>
