@@ -6,6 +6,12 @@ import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.componen
 
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+
+//function call that is passing obj literal{}, that is passing several array literals[]
 @NgModule({
   declarations: [
     AppComponent,
@@ -13,7 +19,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule
-    , FormsModule, BrowserAnimationsModule
+    , FormsModule
+    , BrowserAnimationsModule
+    , MatCardModule
+    , MatButtonModule
+    , MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
