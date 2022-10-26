@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { reduce } from 'rxjs';
 import { PizzaService } from '../pizza.service';
 
 
@@ -43,6 +44,17 @@ export class PizzaToppingsComponent implements OnInit {
       })
     );
     console.log(this.availablePizzaToppings);
+  }
+
+  totalPrice = 0;
+  
+  calculateTotal = () => {
+    this.totalPrice = this.availablePizzaToppings
+      .filter(x => x.checked)
+      .reduce(
+        (acc, x) => acc + x.price
+      , 0
+      );
   }
 
 }
