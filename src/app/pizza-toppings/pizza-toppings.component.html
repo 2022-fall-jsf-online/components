@@ -1,1 +1,16 @@
-<p>pizza-toppings works!</p>
+<h2>Available Toppings</h2>
+
+<!-- Creates div for each loop -->
+<div
+    *ngFor="let pt of availablePizzaToppings"
+>
+    <!-- Adding inside label makes it where you can click on item to check -->
+    <!-- Need to bind to .ts to check - bi-directional -->
+    <label>
+        <input 
+            type="checkbox" name="topping"
+            [(ngModel)]="pt.checked"
+        />
+        {{ pt.name }}, {{ pt.price | currency }}
+    </label>
+</div>
