@@ -18,6 +18,7 @@ import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplicat
 import { AlmAdditionalComponent } from './alm-additional/alm-additional.component';
 import { BsanMathComponent } from './bsan-math/bsan-math.component';
 import { AriceAdditionComponent } from './arice-addition/arice-addition.component';
+import { RleeAddingComponent } from './rlee-adding/rlee-adding.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AriceAdditionComponent } from './arice-addition/arice-addition.componen
     TjsMultiplicationComponent,
     AlmAdditionalComponent,
     BsanMathComponent,
-    AriceAdditionComponent
+    AriceAdditionComponent,
+    RleeAddingComponent
   ],
   imports: [
     BrowserModule
