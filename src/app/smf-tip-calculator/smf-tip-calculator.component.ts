@@ -12,4 +12,11 @@ export class SmfTipCalculatorComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  deliveryFee = 5;
+  orderTotal = 0; 
+  tipAmount = 0;
+  total = 5;
+
+  add = () => this.total = this.deliveryFee + this.orderTotal + this.tipAmount;
+
 }

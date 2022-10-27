@@ -2,6 +2,7 @@
     <mat-card-title>
         Stephanie's Order Total Calculator
     </mat-card-title>
+    <br>
     <mat-card-content>
         <mat-form-field>
             <mat-label>
@@ -44,6 +45,6 @@
             Get Total
         </button>
         &nbsp;
-        {{ total }}
+        {{ total | currency }}
     </mat-card-content>
 </mat-card>
