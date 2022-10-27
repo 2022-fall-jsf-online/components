@@ -12,25 +12,36 @@
           </mat-panel-title>
         </mat-expansion-panel-header>
         <mat-list role="list">
-          <mat-list-item role="listitem">25OFF - 25 cents off of your order</mat-list-item>
-          <mat-list-item role="listitem">50OFF - 50 cents off of your order</mat-list-item>
-          <mat-list-item role="listitem">75OFF - 75 cents off of your order</mat-list-item>
+          <mat-list-item role="listitem">1</mat-list-item>
+          <mat-list-item role="listitem">2</mat-list-item>
+          <mat-list-item role="listitem">3</mat-list-item>
         </mat-list>  
       </mat-expansion-panel>
       <br>
       <form class="coupon-form">
           <br>
           <mat-form-field class="example-full-width" appearance="fill">
-            <mat-label>Enter your coupon code</mat-label><br>
-            <input matInput name="input" placeholder="enter your code" value="">
-        </mat-form-field>
+            <mat-label>Enter your total (3 or more)</mat-label><br>
+            <input matInput name="input" placeholder="enter your total" value=""
+            [(ngModel)]="orderTotal"
+            >
+          </mat-form-field>
           <br>
-          <button mat-raised-button color="primary">Calculate total</button>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Enter your coupon code</mat-label><br>
+            <input matInput name="input" placeholder="enter your code" value=""
+            [(ngModel)]="discount"
+            >
+          </mat-form-field>
+          <br>
+          <button mat-raised-button color="primary"
+          (click)="coupon()"
+          >Calculate total</button>
+          <br>
+          <br>
+          <h3> Your total with discount is:</h3>
+          {{ totalWithDiscount }}
       </form>
-      <br>
-      <h3>
-        Total with Discount: 
-      </h3>   
     </mat-card-content>
 </mat-card>
 <br>

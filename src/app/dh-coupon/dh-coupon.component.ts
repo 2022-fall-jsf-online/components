@@ -1,3 +1,4 @@
+import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { PizzaService } from '../pizza.service';
 
@@ -13,10 +14,12 @@ export class DhCouponComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-
-    const discountPrice = this.pizzaSvc.toppingsTotal;
-
-    console.log(discountPrice);
   }
 
+  orderTotal = 0;
+  discount = 0;
+
+  totalWithDiscount = " " +0;
+
+  coupon = () => this.totalWithDiscount = (" ") + (this. orderTotal - this.discount);
 }
