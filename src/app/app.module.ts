@@ -23,6 +23,7 @@ import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplicat
 import { DhCouponComponent } from './dh-coupon/dh-coupon.component';
 import { AlmAdditionalComponent } from './alm-additional/alm-additional.component';
 import { BsanMathComponent } from './bsan-math/bsan-math.component';
+import { SnahnDivisionComponent } from './snahn-division/snahn-division.component';
 import { AriceAdditionComponent } from './arice-addition/arice-addition.component';
 
 @NgModule({
@@ -34,6 +35,7 @@ import { AriceAdditionComponent } from './arice-addition/arice-addition.componen
     DhCouponComponent,
     AlmAdditionalComponent,
     BsanMathComponent,
+    SnahnDivisionComponent,
     AriceAdditionComponent
   ],
   imports: [
