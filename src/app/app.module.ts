@@ -19,6 +19,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { DhCouponComponent } from './dh-coupon/dh-coupon.component';
+import { AlmAdditionalComponent } from './alm-additional/alm-additional.component';
+import { BsanMathComponent } from './bsan-math/bsan-math.component';
+import { AriceAdditionComponent } from './arice-addition/arice-addition.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { DhCouponComponent } from './dh-coupon/dh-coupon.component';
     PizzaToppingsComponent,
     RaCalculatorComponent,
     TjsMultiplicationComponent,
-    DhCouponComponent
+    DhCouponComponent,
+    AlmAdditionalComponent,
+    BsanMathComponent,
+    AriceAdditionComponent
   ],
   imports: [
     BrowserModule
