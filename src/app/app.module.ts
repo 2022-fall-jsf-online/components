@@ -17,6 +17,7 @@ import { RaCalculatorComponent } from './ra-calculator/ra-calculator.component';
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { AlmAdditionalComponent } from './alm-additional/alm-additional.component';
 import { BsanMathComponent } from './bsan-math/bsan-math.component';
+import { SnahnDivisionComponent } from './snahn-division/snahn-division.component';
 import { AriceAdditionComponent } from './arice-addition/arice-addition.component';
 
 @NgModule({
@@ -27,6 +28,7 @@ import { AriceAdditionComponent } from './arice-addition/arice-addition.componen
     TjsMultiplicationComponent,
     AlmAdditionalComponent,
     BsanMathComponent,
+    SnahnDivisionComponent,
     AriceAdditionComponent
   ],
   imports: [
