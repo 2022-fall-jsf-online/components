@@ -10,13 +10,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { RaCalculatorComponent } from './ra-calculator/ra-calculator.component';
-
-import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { RaCalculatorComponent } from './ra-calculator/ra-calculator.component';
 
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { AlmAdditionalComponent } from './alm-additional/alm-additional.component';
+import { BsanMathComponent } from './bsan-math/bsan-math.component';
+import { AriceAdditionComponent } from './arice-addition/arice-addition.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,9 @@ import { AlmAdditionalComponent } from './alm-additional/alm-additional.componen
     PizzaToppingsComponent,
     RaCalculatorComponent,
     TjsMultiplicationComponent,
-    AlmAdditionalComponent
+    AlmAdditionalComponent,
+    BsanMathComponent,
+    AriceAdditionComponent
   ],
   imports: [
     BrowserModule
