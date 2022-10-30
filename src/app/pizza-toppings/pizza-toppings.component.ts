@@ -36,15 +36,16 @@ export class PizzaToppingsComponent implements OnInit {
     console.log(this.availablePizzaToppings);
   }
 
-  totalPrice = 0;
-
-  calculateTotal = () => {
-    this.totalPrice = this.availablePizzaToppings
-      .filter(x => x.checked)
+  // Getter property that accesses pizza toppings, filters to only checked
+  // Then reduces those into a sum value to be returned "this.available..."
+  get totalPrice() {
+    return this.availablePizzaToppings
+      .filter(x => x.checked) // only checked boxes
       .reduce(
         (acc, x) => acc + x.price
         , 0
       )
     ;
   }
+
 }
