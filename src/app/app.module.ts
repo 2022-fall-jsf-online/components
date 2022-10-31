@@ -8,6 +8,7 @@ import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.componen
 import { DestComponentComponent } from './dest-component/dest-component.component';
 
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatCardModule } from '@angular/material/card';
@@ -16,6 +17,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatNativeDateModule } from '@angular/material/core';
 
 
 
@@ -35,6 +37,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     , MatInputModule
     , MatDatepickerModule
     , MatFormFieldModule
+    , ReactiveFormsModule
+    , MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
