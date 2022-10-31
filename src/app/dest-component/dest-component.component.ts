@@ -26,14 +26,19 @@ export class DestComponentComponent implements OnInit {
   });
 
   //logs to console values of form as json object
-  //print formatted message 
+  //display formatted message via appendChild
   displayAppointment = () => {
     const displayMessage = `Hi, ${this.name} your appointment for ${this.date} is booked!`
       + ` Updates and reminders will be sent to ${this.email}`;
+
+
     const data = this.appointmentForm.value;
     console.log(data);
     console.log(displayMessage); 
     this.appointmentForm.reset(); //reset form
+    const span = document.createElement("span");
+    span.appendChild(document.createTextNode(displayMessage));
+    document.body.appendChild(span);
     return displayMessage;
   };
  
