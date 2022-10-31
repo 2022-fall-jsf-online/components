@@ -3,29 +3,29 @@
         Appointment Generator
     </mat-card-title>
     <mat-card-content>
-        <mat-form-field>
+        <mat-form-field [formGroup]="appointmentForm" (ngSubmit)="displayAppointment()">
             <mat-label>Name</mat-label>
-            <input type="text" matInput>
+            <input type="text" matInput formControlName="name">
         </mat-form-field>
         &nbsp;
-        <mat-form-field>
+        <mat-form-field [formGroup]="appointmentForm">
             <mat-label>Email</mat-label>
-            <input type="email" matInput [formControl]="emailFormControl">
+            <input type="email" matInput formControlName="email">
         </mat-form-field>
         &nbsp;
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="fill" [formGroup]="appointmentForm">
             <mat-label>Select Date</mat-label>
-            <input matInput [matDatepicker]="picker1" placeholder="Angular forms" [formControl]="date">
+            <input matInput [matDatepicker]="picker1" formControlName="date">
             <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
             <mat-datepicker #picker1></mat-datepicker>
         </mat-form-field>
+        &nbsp;
         <button
-        mat-button
+        mat-raised-button 
+        color="primary"
         (click)="displayAppointment()"
         >
             Submit
         </button>
-
-
     </mat-card-content>
 </mat-card>

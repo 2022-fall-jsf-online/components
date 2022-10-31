@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-dest-component',
@@ -13,16 +13,22 @@ export class DestComponentComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  
+
+
   //appointment properties
-  date = new FormControl(new Date());
-  name = "";
-  emailFormControl = new FormControl('', [Validators.required, Validators.email]);
-  nameFormControl = new FormControl('', [Validators.required]);
+  appointmentForm = new FormGroup({
+    name: new FormControl(),
+    email: new FormControl(),
+    date: new FormControl(new Date())
+  });
 
 
   displayAppointment = () => {
-
+    console.log(this.appointmentForm.value);
+    const data = this.appointmentForm.value;
+    console.log(data);
+    return this.appointmentForm.value
+    
   };
  
 }
