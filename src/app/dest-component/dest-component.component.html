@@ -5,17 +5,32 @@
     <mat-card-content>
         <mat-form-field [formGroup]="appointmentForm" (ngSubmit)="displayAppointment()">
             <mat-label>Name</mat-label>
-            <input type="text" matInput formControlName="name">
+            <input 
+            type="text" 
+            matInput 
+            formControlName="name"
+            [(ngModel)]="name"
+            />
         </mat-form-field>
         &nbsp;
         <mat-form-field [formGroup]="appointmentForm">
             <mat-label>Email</mat-label>
-            <input type="email" matInput formControlName="email">
+            <input 
+            type="email" 
+            matInput 
+            formControlName="email"
+            [(ngModel)]="email"
+            />
         </mat-form-field>
         &nbsp;
         <mat-form-field appearance="fill" [formGroup]="appointmentForm">
             <mat-label>Select Date</mat-label>
-            <input matInput [matDatepicker]="picker1" formControlName="date">
+            <input 
+            matInput 
+            [matDatepicker]="picker1" 
+            formControlName="date"
+            [(ngModel)]="date"
+            />
             <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
             <mat-datepicker #picker1></mat-datepicker>
         </mat-form-field>
@@ -27,5 +42,9 @@
         >
             Submit
         </button>
+
+
     </mat-card-content>
+
+
 </mat-card>

@@ -13,6 +13,9 @@ export class DestComponentComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  name = '';
+  email = '';
+  date = Date;
 
 
   //appointment properties
@@ -22,13 +25,16 @@ export class DestComponentComponent implements OnInit {
     date: new FormControl(new Date())
   });
 
-
+  //logs to console values of form as json object
+  //print formatted message 
   displayAppointment = () => {
-    console.log(this.appointmentForm.value);
+    const displayMessage = `Hi, ${this.name} your appointment for ${this.date} is booked!`
+      + ` Updates and reminders will be sent to ${this.email}`;
     const data = this.appointmentForm.value;
     console.log(data);
-    return this.appointmentForm.value
-    
+    console.log(displayMessage); 
+    this.appointmentForm.reset(); //reset form
+    return displayMessage;
   };
  
 }
