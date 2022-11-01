@@ -15,12 +15,30 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
 
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatListModule} from '@angular/material/list';
+import { RaCalculatorComponent } from './ra-calculator/ra-calculator.component';
+
+
+import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { DhCouponComponent } from './dh-coupon/dh-coupon.component';
+import { AlmAdditionalComponent } from './alm-additional/alm-additional.component';
+import { BsanMathComponent } from './bsan-math/bsan-math.component';
+import { SnahnDivisionComponent } from './snahn-division/snahn-division.component';
+import { AriceAdditionComponent } from './arice-addition/arice-addition.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
-    DmeyMultiplyComponent
+    DmeyMultiplyComponent,
+    RaCalculatorComponent,
+    TjsMultiplicationComponent,
+    DhCouponComponent,
+    AlmAdditionalComponent,
+    BsanMathComponent,
+    SnahnDivisionComponent,
+    AriceAdditionComponent
   ],
   imports: [
     BrowserModule
@@ -29,8 +47,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
-    , MatInputModule
     , MatFormFieldModule
+    , MatInputModule
+    , MatExpansionModule
+    , MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
