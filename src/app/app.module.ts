@@ -26,6 +26,7 @@ import { AlmAdditionalComponent } from './alm-additional/alm-additional.componen
 import { BsanMathComponent } from './bsan-math/bsan-math.component';
 import { SnahnDivisionComponent } from './snahn-division/snahn-division.component';
 import { AriceAdditionComponent } from './arice-addition/arice-addition.component';
+import { SmfTipCalculatorComponent } from './smf-tip-calculator/smf-tip-calculator.component';
 
 @NgModule({
   declarations: [
@@ -37,8 +38,10 @@ import { AriceAdditionComponent } from './arice-addition/arice-addition.componen
     DhCouponComponent,
     AlmAdditionalComponent,
     BsanMathComponent,
+    AriceAdditionComponent,
     SnahnDivisionComponent,
-    AriceAdditionComponent
+    AriceAdditionComponent,
+    SmfTipCalculatorComponent
   ],
   imports: [
     BrowserModule
