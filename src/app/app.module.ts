@@ -35,9 +35,9 @@ import { SmfTipCalculatorComponent } from './smf-tip-calculator/smf-tip-calculat
     AlmAdditionalComponent,
     BsanMathComponent,
     AriceAdditionComponent,
-    SmfTipCalculatorComponent
     SnahnDivisionComponent,
-    AriceAdditionComponent
+    AriceAdditionComponent,
+    SmfTipCalculatorComponent
   ],
   imports: [
     BrowserModule
