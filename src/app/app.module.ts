@@ -18,11 +18,14 @@ import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatNativeDateModule } from '@angular/material/core';
+import { DmeyMultiplyComponent } from './dmey-multiply/dmey-multiply.component';
 
 
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatListModule} from '@angular/material/list';
 import { RaCalculatorComponent } from './ra-calculator/ra-calculator.component';
+
+
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { DhCouponComponent } from './dh-coupon/dh-coupon.component';
 import { AlmAdditionalComponent } from './alm-additional/alm-additional.component';
@@ -36,6 +39,7 @@ import { SmfTipCalculatorComponent } from './smf-tip-calculator/smf-tip-calculat
     AppComponent,
     PizzaToppingsComponent,
     DestComponentComponent,
+    DmeyMultiplyComponent,
     RaCalculatorComponent,
     TjsMultiplicationComponent,
     DhCouponComponent,
