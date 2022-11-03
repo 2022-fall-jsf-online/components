@@ -20,12 +20,31 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatNativeDateModule } from '@angular/material/core';
 
 
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatListModule} from '@angular/material/list';
+import { RaCalculatorComponent } from './ra-calculator/ra-calculator.component';
+import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
+import { DhCouponComponent } from './dh-coupon/dh-coupon.component';
+import { AlmAdditionalComponent } from './alm-additional/alm-additional.component';
+import { BsanMathComponent } from './bsan-math/bsan-math.component';
+import { SnahnDivisionComponent } from './snahn-division/snahn-division.component';
+import { AriceAdditionComponent } from './arice-addition/arice-addition.component';
+import { SmfTipCalculatorComponent } from './smf-tip-calculator/smf-tip-calculator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
-    DestComponentComponent
+    DestComponentComponent,
+    RaCalculatorComponent,
+    TjsMultiplicationComponent,
+    DhCouponComponent,
+    AlmAdditionalComponent,
+    BsanMathComponent,
+    AriceAdditionComponent,
+    SnahnDivisionComponent,
+    AriceAdditionComponent,
+    SmfTipCalculatorComponent
   ],
   imports: [
     BrowserModule
@@ -39,6 +58,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     , MatFormFieldModule
     , ReactiveFormsModule
     , MatNativeDateModule
+    , MatExpansionModule
+    , MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

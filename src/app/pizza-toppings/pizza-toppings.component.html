@@ -1,45 +1,39 @@
-<mat-card>
+<mat-card >
     <mat-card-title>
         Available Pizza Toppings
     </mat-card-title>
     <mat-card-content>
         <button
-         mat-mini-fab
-         (click)="checkAll()"
+            mat-mini-fab
+            (click)="checkAll()"
         >
             All
         </button>
-        &nbsp; <!-- space between buttons --> 
+        &nbsp;
         <button
-        mat-mini-fab
-        color="secondary"
-        (click)="uncheckAll()"
+            mat-mini-fab
+            color="secondary"
+            (click)="uncheckAll()"
         >
             None
         </button>
-    
-        <!--Loop through available pizza toppings-->
-    <div
-        *ngFor="let pt of availablePizzaToppings" 
-    >
-        <label>
-            <mat-checkbox
-            [(ngModel)]="pt.checked"
-            >
-            </mat-checkbox>    
-            {{ pt.name }} ({{ pt.price | currency }})
-        </label>
-    </div>
-    <br>
-    <h3>
-        Total: {{ totalPrice | currency }}
-    </h3>        
+        <br>
+        <br>
+        <div
+            *ngFor="let pt of availablePizzaToppings"
+        >
+            <label>
+                <mat-checkbox 
+                    [(ngModel)]="pt.checked"
+                    (change)="calculateTotalPrice()"
+                >
+                </mat-checkbox>
+                {{ pt.name }} ({{ pt.price | currency }})
+            </label>
+        </div>
+        <br>
+        <h3>
+            Total: {{ totalPrice | currency }}
+        </h3>        
     </mat-card-content>
 </mat-card>
-
-
-
-
-
-
-

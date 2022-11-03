@@ -36,16 +36,45 @@ export class PizzaToppingsComponent implements OnInit {
     console.log(this.availablePizzaToppings);
   }
 
-  // Getter property that accesses pizza toppings, filters to only checked
-  // Then reduces those into a sum value to be returned "this.available..."
-  get totalPrice() {
-    return this.availablePizzaToppings
-      .filter(x => x.checked) // only checked boxes
+  totalPrice = 0;
+
+  calculateTotalPrice() {
+    
+    console.log("caclulateTotalPrice()");
+
+    this.totalPrice = this.availablePizzaToppings
+      .filter(
+        x => x.checked
+      )
       .reduce(
         (acc, x) => acc + x.price
         , 0
       )
     ;
+
+    this.pizzaSvc.toppingsTotal = this.totalPrice;
+  }
+
+  checkAll = () => {
+    this.availablePizzaToppings = this.availablePizzaToppings.map(
+      x => ({
+        ...x
+        , checked: true
+      })
+    );
+
+    this.calculateTotalPrice();
+  }
+
+  uncheckAll = () => {
+    this.availablePizzaToppings = this.availablePizzaToppings.map(
+      x => ({
+        ...x
+        , checked: false
+      })
+    );
+
+    this.calculateTotalPrice();
   }
 
   //Method to map listed toppings to all be checked 
