@@ -1,4 +1,4 @@
-<mat-card>
+<mat-card >
     <mat-card-title>
         Available Pizza Toppings
     </mat-card-title>
@@ -25,6 +25,7 @@
             <label>
                 <mat-checkbox 
                     [(ngModel)]="pt.checked"
+                    (change)="calculateTotalPrice()"
                 >
                 </mat-checkbox>
                 {{ pt.name }} ({{ pt.price | currency }})
