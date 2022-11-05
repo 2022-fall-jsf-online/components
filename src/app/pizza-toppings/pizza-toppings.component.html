@@ -1,11 +1,11 @@
 <h2>
-    Available Toppings
+    Available Pizza Toppings
 </h2>
 <div
     *ngFor="let pt of availablePizzaToppings"
 >
     <label>
-        <input 
+        <input
             type="checkbox"
             [(ngModel)]="pt.checked"
         />
