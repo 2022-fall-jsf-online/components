@@ -3,6 +3,22 @@
         Available Pizza Toppings
     </mat-card-title>
     <mat-card-content>
+        <button
+            mat-mini-fab
+            (click)="checkAll()"
+        >
+            All
+        </button>
+        &nbsp;
+        <button
+            mat-mini-fab
+            color="secondary"
+            (click)="uncheckAll()"
+        >
+            None
+        </button>
+        <br>
+        <br>
         <div
             *ngFor="let pt of availablePizzaToppings"
         >
