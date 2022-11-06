@@ -1,0 +1,50 @@
+<mat-card>
+    <mat-card-title>
+        Stephanie's Order Total Calculator
+    </mat-card-title>
+    <br>
+    <mat-card-content>
+        <mat-form-field>
+            <mat-label>
+                Delivery Fee
+            </mat-label>
+            <input 
+            type="number"
+            [(ngModel)]="deliveryFee"
+            matInput
+            >
+        </mat-form-field>
+        &nbsp; + &nbsp;
+        <mat-form-field>
+            <mat-label>
+                Order Total
+            </mat-label>
+            <input 
+            type="number"
+            [(ngModel)]="orderTotal"
+            matInput
+            >
+        </mat-form-field>
+        &nbsp; + &nbsp;
+        <mat-form-field>
+            <mat-label>
+                Tip Amount
+            </mat-label>
+            <input 
+            type="number"
+            [(ngModel)]="tipAmount"
+            matInput
+            >
+        </mat-form-field>
+        &nbsp; 
+        <button
+            mat-raised-button
+            color="primary"
+            (click)="add()"
+        >
+            Get Total
+        </button>
+        &nbsp;
+        {{ total | currency }}
+    </mat-card-content>
+</mat-card>
