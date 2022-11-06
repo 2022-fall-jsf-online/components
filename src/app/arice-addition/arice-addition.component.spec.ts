@@ -1,17 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PizzaToppingsComponent } from './pizza-toppings.component';
+import { AriceAdditionComponent } from './arice-addition.component';
 
-describe('PizzaToppingsComponent', () => {
-  let component: PizzaToppingsComponent;
-  let fixture: ComponentFixture<PizzaToppingsComponent>;
+describe('AriceAdditionComponent', () => {
+  let component: AriceAdditionComponent;
+  let fixture: ComponentFixture<AriceAdditionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PizzaToppingsComponent ]
+      declarations: [ AriceAdditionComponent ]
     })
     .compileComponents();
-    fixture = TestBed.createComponent(PizzaToppingsComponent);
+
+    fixture = TestBed.createComponent(AriceAdditionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

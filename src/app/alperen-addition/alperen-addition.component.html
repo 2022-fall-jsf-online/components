@@ -1,0 +1,62 @@
+<mat-card>
+    <mat-card-title>
+        Alperen's Four Basic Math Calculator
+    </mat-card-title>
+    <mat-card-content>
+        <mat-form-field>
+            <mat-label>
+                First Number
+            </mat-label>
+            <input type="number"
+            matInput
+            [(ngModel)]="firstNumber"
+            >
+        </mat-form-field>
+        &nbsp; &nbsp;
+        <mat-form-field>
+            <mat-label>
+                Second Number
+            </mat-label>
+            <input type="number"
+            matInput
+            [(ngModel)]="secondNumber"
+            >
+        </mat-form-field>
+        &nbsp; = &nbsp;
+        {{ total }}
+        <br>
+        <mat-divider></mat-divider>
+        <br>
+        <button
+            mat-fab
+            color="primary"
+            (click)="add();"
+        >
+        +
+        </button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button
+            mat-fab
+            color="warn"
+            (click)="subtract();"
+        >
+        -
+        </button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button
+            mat-fab
+            color="accent"
+            (click)="multiply();"
+        >
+        X
+        </button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button
+            mat-fab
+            color="accent"
+            (click)="divide();"
+        >
+        /
+        </button>
+    </mat-card-content>
+</mat-card>

@@ -1,17 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PizzaToppingsComponent } from './pizza-toppings.component';
+import { AlmAdditionalComponent } from './alm-additional.component';
 
-describe('PizzaToppingsComponent', () => {
-  let component: PizzaToppingsComponent;
-  let fixture: ComponentFixture<PizzaToppingsComponent>;
+describe('AlmAdditionComponent', () => {
+  let component: AlmAdditionalComponent;
+  let fixture: ComponentFixture<AlmAdditionalComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PizzaToppingsComponent ]
+      declarations: [ AlmAdditionalComponent ]
     })
     .compileComponents();
-    fixture = TestBed.createComponent(PizzaToppingsComponent);
+
+    fixture = TestBed.createComponent(AlmAdditionalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

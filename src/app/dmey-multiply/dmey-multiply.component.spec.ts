@@ -1,17 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PizzaToppingsComponent } from './pizza-toppings.component';
+import { DmeyMultiplyComponent } from './dmey-multiply.component';
 
-describe('PizzaToppingsComponent', () => {
-  let component: PizzaToppingsComponent;
-  let fixture: ComponentFixture<PizzaToppingsComponent>;
+describe('DmeyMultiplyComponent', () => {
+  let component: DmeyMultiplyComponent;
+  let fixture: ComponentFixture<DmeyMultiplyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PizzaToppingsComponent ]
+      declarations: [ DmeyMultiplyComponent ]
     })
     .compileComponents();
-    fixture = TestBed.createComponent(PizzaToppingsComponent);
+
+    fixture = TestBed.createComponent(DmeyMultiplyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
