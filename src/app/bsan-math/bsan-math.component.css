@@ -1,0 +1,12 @@
+mat-card{
+    font-weight: bold;
+}
+mat-label {
+    font-weight: bold;
+    color: black;
+    font-size: medium;
+    margin-bottom: 1rem;
+}
+mat-card-title {
+    margin-bottom: 2rem;
+}

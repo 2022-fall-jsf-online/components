@@ -38,13 +38,28 @@ export class PizzaToppingsComponent implements OnInit {
 
   // This is a getter that works whenever variable is called
   // It is a function because it is now a getter and needs to return something
-  get totalPrice() {
-    return this.availablePizzaToppings
-      .filter(x => x.checked)
+  // get totalPrice() {
+  //   return this.availablePizzaToppings
+  //     .filter(x => x.checked)
+  //     .reduce(
+  //       (acc, x) => acc + x.price
+  //       , 0
+  //     );
+  // }
+  totalPrice = 0;
+
+  calculateTotalPrice() {
+    console.log("caclulateTotalPrice()");
+    this.totalPrice = this.availablePizzaToppings
+      .filter(
+        x => x.checked
+      )
       .reduce(
         (acc, x) => acc + x.price
         , 0
-      );
+      )
+    ;
+    this.pizzaSvc.toppingsTotal = this.totalPrice;
   }
 
   checkAll = () => {
@@ -54,6 +69,7 @@ export class PizzaToppingsComponent implements OnInit {
         , checked: true
       })
     );
+    this.calculateTotalPrice();
   }
 
   uncheckAll = () => {
@@ -63,5 +79,12 @@ export class PizzaToppingsComponent implements OnInit {
       , checked: false
       })
     );
-  }
+  
+    //   , checked: false
+    // )}
+    // )
+  // );
+  // }
+  this.calculateTotalPrice();
+}
 }
