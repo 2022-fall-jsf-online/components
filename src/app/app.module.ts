@@ -28,6 +28,7 @@ import { BsanMathComponent } from './bsan-math/bsan-math.component';
 import { AlperenAdditionComponent } from './alperen-addition/alperen-addition.component';
 import { SnahnDivisionComponent } from './snahn-division/snahn-division.component';
 import { AriceAdditionComponent } from './arice-addition/arice-addition.component';
+import { RleeAddingComponent } from './rlee-adding/rlee-adding.component';
 import { SmfTipCalculatorComponent } from './smf-tip-calculator/smf-tip-calculator.component';
 
 @NgModule({
@@ -41,10 +42,10 @@ import { SmfTipCalculatorComponent } from './smf-tip-calculator/smf-tip-calculat
     AlmAdditionalComponent,
     BsanMathComponent,
     AlperenAdditionComponent,
-    AriceAdditionComponent,
     SnahnDivisionComponent,
     AriceAdditionComponent,
-    SmfTipCalculatorComponent
+    SmfTipCalculatorComponent,
+    RleeAddingComponent
   ],
   imports: [
     BrowserModule
