@@ -41,11 +41,11 @@ import { SmfTipCalculatorComponent } from './smf-tip-calculator/smf-tip-calculat
     DhCouponComponent,
     AlmAdditionalComponent,
     BsanMathComponent,
-    RleeAddingComponent,
     AlperenAdditionComponent,
     SnahnDivisionComponent,
     AriceAdditionComponent,
-    SmfTipCalculatorComponent
+    SmfTipCalculatorComponent,
+    RleeAddingComponent
   ],
   imports: [
     BrowserModule
