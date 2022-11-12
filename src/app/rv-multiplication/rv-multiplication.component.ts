@@ -12,9 +12,9 @@ export class RvMultiplicationComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  numberOne = 10;
-  numberTwo = 90;
-  total = 900;
+  numberOne = 5;
+  numberTwo = 5;
+  total = 25;
 
   multiply = () => this.total = this.numberOne * this.numberTwo;
 
