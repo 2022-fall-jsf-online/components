@@ -19,6 +19,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatNativeDateModule } from '@angular/material/core';
 import { DmeyMultiplyComponent } from './dmey-multiply/dmey-multiply.component';
+import { MatDividerModule } from '@angular/material/divider';
 
 
 import {MatExpansionModule} from '@angular/material/expansion';
@@ -30,8 +31,10 @@ import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplicat
 import { DhCouponComponent } from './dh-coupon/dh-coupon.component';
 import { AlmAdditionalComponent } from './alm-additional/alm-additional.component';
 import { BsanMathComponent } from './bsan-math/bsan-math.component';
+import { AlperenAdditionComponent } from './alperen-addition/alperen-addition.component';
 import { SnahnDivisionComponent } from './snahn-division/snahn-division.component';
 import { AriceAdditionComponent } from './arice-addition/arice-addition.component';
+import { RleeAddingComponent } from './rlee-adding/rlee-adding.component';
 import { SmfTipCalculatorComponent } from './smf-tip-calculator/smf-tip-calculator.component';
 
 @NgModule({
@@ -45,10 +48,11 @@ import { SmfTipCalculatorComponent } from './smf-tip-calculator/smf-tip-calculat
     DhCouponComponent,
     AlmAdditionalComponent,
     BsanMathComponent,
-    AriceAdditionComponent,
+    AlperenAdditionComponent,
     SnahnDivisionComponent,
     AriceAdditionComponent,
-    SmfTipCalculatorComponent
+    SmfTipCalculatorComponent,
+    RleeAddingComponent
   ],
   imports: [
     BrowserModule
@@ -62,6 +66,7 @@ import { SmfTipCalculatorComponent } from './smf-tip-calculator/smf-tip-calculat
     , MatFormFieldModule
     , ReactiveFormsModule
     , MatNativeDateModule
+    , MatDividerModule
     , MatExpansionModule
     , MatListModule
   ],
