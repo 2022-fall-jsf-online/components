@@ -30,6 +30,7 @@ import { SnahnDivisionComponent } from './snahn-division/snahn-division.componen
 import { AriceAdditionComponent } from './arice-addition/arice-addition.component';
 import { RleeAddingComponent } from './rlee-adding/rlee-adding.component';
 import { SmfTipCalculatorComponent } from './smf-tip-calculator/smf-tip-calculator.component';
+import { RvMultiplicationComponent } from './rv-multiplication/rv-multiplication.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { SmfTipCalculatorComponent } from './smf-tip-calculator/smf-tip-calculat
     SnahnDivisionComponent,
     AriceAdditionComponent,
     SmfTipCalculatorComponent,
+    RvMultiplicationComponent,
     RleeAddingComponent
   ],
   imports: [
