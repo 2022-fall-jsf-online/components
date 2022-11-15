@@ -4,15 +4,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.component';
 
+
+import { DestComponentComponent } from './dest-component/dest-component.component';
+
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { DmeyMultiplyComponent } from './dmey-multiply/dmey-multiply.component';
 import { MatInputModule } from '@angular/material/input';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatNativeDateModule } from '@angular/material/core';
+import { DmeyMultiplyComponent } from './dmey-multiply/dmey-multiply.component';
 import { MatDividerModule } from '@angular/material/divider';
 
 
@@ -36,6 +42,7 @@ import { RvMultiplicationComponent } from './rv-multiplication/rv-multiplication
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
+    DestComponentComponent,
     DmeyMultiplyComponent,
     RaCalculatorComponent,
     TjsMultiplicationComponent,
@@ -56,8 +63,11 @@ import { RvMultiplicationComponent } from './rv-multiplication/rv-multiplication
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
-    , MatFormFieldModule
     , MatInputModule
+    , MatDatepickerModule
+    , MatFormFieldModule
+    , ReactiveFormsModule
+    , MatNativeDateModule
     , MatDividerModule
     , MatExpansionModule
     , MatListModule
