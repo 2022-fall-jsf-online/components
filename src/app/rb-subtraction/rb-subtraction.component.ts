@@ -12,4 +12,10 @@ export class RbSubtractionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  numberOne = 90;
+  numberTwo = 10;
+  total = 80;
+
+  subtract = () => this.total = this.numberOne - this.numberTwo;
+
 }
