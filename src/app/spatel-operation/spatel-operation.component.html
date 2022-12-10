@@ -11,6 +11,8 @@
             <input 
             matInput
             type="number"
+            [(ngModel)]="numberFromField"
+
             >
 
 
@@ -21,19 +23,25 @@
     <button
      mat-raised-button
      color="primary"
-    >Square this Number</button>
+     (click)=squareThisNumber()
+     >Square this Number
+    
+</button>
     <br>
     <button
     mat-raised-button
     color="primary"
+    (click)="rootThisNumber()"
     >
     Get Square Root 
     </button>
+    <br>
+    <button
+    mat-raised-button
+    color="seconardy"
+    (click)="resetThisNumber()"
+    >Reset
+</button>
 
     </mat-card-content>
-
-
-
-
-
 </mat-card>
