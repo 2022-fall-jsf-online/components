@@ -1,61 +1,37 @@
 <mat-card>
-    <mat-card-title>
-        Sujal's math section
-    </mat-card-title>
-    <hr>
-    <mat-card-content>
+  <mat-card-title>
+    Sujal's math section
+  </mat-card-title>
+  <hr>
+  <mat-card-content>
 
 
-        <mat-form-field>
-            <mat-label>Enter a Number</mat-label>
-            <input 
-            matInput
-            type="number"
-            [(ngModel)]="numberFromField"
-
-            >
+    <mat-form-field>
+      <mat-label>Enter a Number</mat-label>
+      <input matInput type="number" [(ngModel)]="numberFromField">
 
 
-        </mat-form-field>
-    
-      
-    <br>
-    <button
-     mat-raised-button
-     color="primary"
-     (click)=squareThisNumber()
-     >Square this Number
-    
-</button>
-    <br>
-    <button
-    mat-raised-button
-    color="primary"
-    (click)="rootThisNumber()"
-    >
-    Get Square Root 
+    </mat-form-field>
+
+
+
+    <button mat-raised-button color="primary" (click)=squareThisNumber()>Square this Number
+
+    </button>
+
+    <button mat-raised-button color="primary" (click)="rootThisNumber()">
+      Get Square Root
+    </button>
+    <button mat-raised-button color="warn" (click)="resetThisNumber()">Reset
+    </button>
+
+
+    <button mat-flat-button color="accent" (click)="randomNumber()">Random Number
     </button>
     <br>
-    <button
-    mat-raised-button
-    color="seconardy"
-    (click)="resetThisNumber()"
-    >Reset
-</button>
-
-<br>
-<button
-mat-raised-button
-color="secondary"
-(click)="randomNumber()"
-
-
->
-    Random Number
-</button>
 
 
 
 
-    </mat-card-content>
+  </mat-card-content>
 </mat-card>
