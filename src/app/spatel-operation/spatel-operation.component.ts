@@ -29,6 +29,10 @@ export class SpatelOperationComponent implements OnInit {
   resetThisNumber = () => {
     this.numberFromField = 0;
   }
+  randomNumber = () => {
+   const newNumber = (Math.random() *100);
+   this.numberFromField = Math.round(newNumber);
+  }
 
 
 }
