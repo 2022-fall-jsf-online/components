@@ -14,6 +14,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { AramseyCalculatorComponent } from './aramsey-calculator/aramsey-calculator.component';
+
 import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -45,6 +47,7 @@ import { SpatelOperationComponent } from './spatel-operation/spatel-operation.co
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
+    AramseyCalculatorComponent,
     DestComponentComponent,
     DmeyMultiplyComponent,
     RaCalculatorComponent,
@@ -69,8 +72,8 @@ import { SpatelOperationComponent } from './spatel-operation/spatel-operation.co
     , MatButtonModule
     , MatCheckboxModule
     , MatInputModule
-    , MatDatepickerModule
     , MatFormFieldModule
+    , MatDatepickerModule
     , ReactiveFormsModule
     , MatNativeDateModule
     , MatDividerModule
