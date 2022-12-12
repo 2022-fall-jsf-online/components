@@ -40,6 +40,7 @@ import { RleeAddingComponent } from './rlee-adding/rlee-adding.component';
 import { SmfTipCalculatorComponent } from './smf-tip-calculator/smf-tip-calculator.component';
 import { RvMultiplicationComponent } from './rv-multiplication/rv-multiplication.component';
 import { RbSubtractionComponent } from './rb-subtraction/rb-subtraction.component';
+import { SpatelOperationComponent } from './spatel-operation/spatel-operation.component';
 
 
 @NgModule({
@@ -60,7 +61,8 @@ import { RbSubtractionComponent } from './rb-subtraction/rb-subtraction.componen
     SmfTipCalculatorComponent,
     RvMultiplicationComponent,
     RleeAddingComponent,
-    RbSubtractionComponent
+    RbSubtractionComponent,
+    SpatelOperationComponent
   ],
   imports: [
     BrowserModule
